@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { useRouter } from "next/navigation";
+
 
 export default function Home() {
 
@@ -17,9 +18,10 @@ export default function Home() {
 
   return (
     <>
-    <input type="text" value={wish} onChange={(e) => setWish(e.target.value)} placeholder="Enter Wish"/>
-    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={sendWish}>Send</button>
-    <p>{wish}</p>
+      <Suspense fallback={<div>Loading your wish...</div>}>
+        <input type="text" value={wish} onChange={(e) => setWish(e.target.value)} placeholder="Enter Wish"/>
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={sendWish}>Send</button>
+      </Suspense>
     </>
   );
 }
