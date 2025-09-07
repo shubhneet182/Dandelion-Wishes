@@ -5,7 +5,8 @@
   display: inline-block;
   padding-left: 100%;
   animation: scroll-left 12s linear infinite;
-  background: -webkit-linear-gradient(#ff0080, #1F51FF, #B5179E, #7209B7);
+  /* background: -webkit-linear-gradient(#ff0080, #1F51FF, #B5179E, #7209B7); */
+  background: -webkit-linear-gradient(#c6ffdd, #fbd786, #f7797d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -18,6 +19,48 @@
   background-color: black;
 }
 
+/* Font Colors */
+.font-color1 {
+    background: -webkit-linear-gradient(#ff0080, #1F51FF, #B5179E, #7209B7);
+}
+
+.font-color2 {
+    background: -webkit-linear-gradient(#c6ffdd, #fbd786, #f7797d);
+}
+
+/* Fonts */
+.font1 {
+    font-family: '24Led-LE4D';
+}
+
+.font2 {
+    font-family: '24LedBright-XElj';
+}
+
+.font3 {
+    font-family: '24LedGrid-dnwE';
+}
+
+.font4 {
+    font-family: 'advanced_led_board-7';
+}
+
+.font5 {
+    font-family: 'bold_led_board-7';
+}
+
+.font6 {
+    font-family: 'karnivore.digit';
+}
+
+.font7 {
+    font-family: 'NewLedDisplaySt-RD6e';
+}
+
+.font8 {
+    font-family: 'TheLedDisplaySt-5RLG';
+}
+
 @keyframes scroll-left {
   from{
     transform: translateX(0%);
@@ -25,4 +68,44 @@
   to{
     transform: translateX(-100%);
   }
+}
+
+@font-face {
+  font-family: '24Led-LE4D';
+  src: url('/fonts/24Led-LE4D.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '24LedBright-XElj';
+  src: url('/fonts/24LedBright-XElj.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: '24LedGrid-dnwE';
+  src: url('/fonts/24LedGrid-dnwE.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'advanced_led_board-7';
+  src: url('/fonts/advanced_led_board-7.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bold_led_board-7';
+  src: url('/fonts/bold_led_board-7.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'karnivore.digit';
+  src: url('/fonts/karnivore.digit.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NewLedDisplaySt-RD6e';
+  src: url('/fonts/NewLedDisplaySt-RD6e.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'TheLedDisplaySt-5RLG';
+  src: url('/fonts/TheLedDisplaySt-5RLG.ttf') format('truetype');
 }
